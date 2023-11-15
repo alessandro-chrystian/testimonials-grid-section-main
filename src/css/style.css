@@ -1,0 +1,175 @@
+* {
+    transition: all 0.5s ease;
+}
+body {
+    height: 100vh;
+    background-color: rgb(208, 226, 226);
+}
+
+html {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+}
+
+h1, p {
+    color: hsl(0, 0%, 81%);
+    font-size: 13px;
+}
+
+h2 {
+    color: hsl(0, 0%, 81%);
+    opacity: 50%;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+h3 {
+    color: hsl(210, 46%, 95%);
+}
+
+p {
+    opacity: 70%;
+}
+
+img {
+    border-radius: 50%;
+    width: 45px;
+}
+
+.main-container {
+    display: grid;
+    margin: 0 auto;
+    grid-template-areas: "daniel"
+                         "jonathan"
+                         "jeanette"
+                         "patrick"
+                         "kira";
+    grid-gap: 28px;
+    grid-template-columns: 1fr;
+}
+
+.container {
+    border-radius: 5px;
+    box-shadow: 2px 2px 50px 0px rgba(0, 0, 0, 0.26);
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.text.quotation, .text {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 30px;
+    gap: 20px;
+    margin-top: -13px;
+}
+
+.presentation {
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    align-items: center;
+}
+
+.daniel.container {
+    grid-area: daniel;
+    margin: 0 auto;
+    margin-top: 60px;
+    background-color: hsl(263, 55%, 52%);
+    background: url('/images/bg-pattern-quotation.svg') hsl(263, 55%, 52%) no-repeat top right 20px;
+}
+
+.daniel h3 {
+    font-size: 21px;
+}
+
+.daniel p {
+    font-size: 14px;
+}
+
+.img-daniel {
+    border: 4px solid hsla(262, 100%, 78%, 0.479);
+}
+
+.daniel-presentation-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.jonathan.container {
+    grid-area: jonathan;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.img-jonathan {
+    border: 3px solid hsla(0, 0%, 43%, 0.836);
+}
+
+.jonathan h3 {
+    font-size: 20px;
+}
+
+.jonathan p {
+    font-size: 13px;
+}
+
+.jeanette.container {
+    grid-area: jeanette;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.jeanette h1, .jeanette h2, .jeanette h3, .jeanette p {
+    color: hsl(217, 19%, 35%);
+}
+
+.jeanette h3 {
+    font-size: 22px;
+}
+
+.jeanette p {
+    font-size: 14px;
+}
+
+.patrick.container {
+    grid-area: patrick;
+    background-color: hsl(219, 29%, 14%);
+}
+
+.img-patrick {
+    border: 3px solid hsl(263, 55%, 52%);
+}
+
+.patrick h3 {
+    font-size: 20px;
+}
+
+.patrick p {
+    font-size: 13.7px;
+}
+
+.kira.container {
+    grid-area: kira;
+    background-color: hsl(0, 0%, 100%);
+    margin-bottom: 60px;
+}
+
+.kira h1, .kira h2, .kira h3, .kira p {
+    color: hsl(217, 19%, 35%);
+}
+
+.kira h3 {
+    font-size: 20px;
+}
+
+.kira p {
+    font-size: 13.7px;
+}
+
+.attribution {
+    margin-top: -30px;
+}
+
+.attribution p {
+    color: black;
+    opacity: 100%;
+}

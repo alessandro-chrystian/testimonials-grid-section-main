@@ -1,0 +1,87 @@
+@media (min-width: 700px) {
+    body {
+        width: fit-content;
+        margin: 0 auto;
+        }
+
+    .main-container {
+        grid-template-areas: "daniel daniel"
+        "jonathan kira"
+        "jeanette kira"
+        "patrick patrick";
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .daniel.container{
+        margin-top: 60px;
+        background: url('/images/bg-pattern-quotation.svg') hsl(263, 55%, 52%) no-repeat top right 90px;
+    }
+    .patrick.container {
+        margin-bottom: 60px;
+    }
+    .daniel.container, .patrick.container {
+        width: 700px;
+    }
+
+    .kira.container{
+        width: 335px;
+        margin-bottom: 0;
+    }
+    .kira.container p {
+        line-height: 1.6em;
+    }
+
+    .jonathan.container, .jeanette.container{
+        width: 337px;
+    }
+}
+
+@media (min-width: 1160px) {
+    main {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+
+    }
+    .main-container {
+        grid-gap: 15px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "daniel daniel jonathan kira"
+                            "jeanette patrick patrick kira"; 
+        align-items: center;
+    }
+    .daniel.container {
+        margin-top: 0;
+        width: 580px;
+        height: 280px;
+    }
+    .jonathan.container {
+        width: 250px;
+        height: 280px;
+    }
+    .jeanette.container {
+        width: 277px;
+        height: 270px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .jeanette h3 {
+        font-size: 23px;
+    }
+    .patrick.container {
+        width: 550px;
+        height: 270px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .kira.container {
+        width: 265px;
+        height: 1fr;
+        margin-bottom: 5px;
+    }
+
+    .kira p {
+        font-size: 12.5px;
+    }
+}
